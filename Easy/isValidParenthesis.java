@@ -1,28 +1,12 @@
-class Solution {
-    public boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-        for(char c : s.toCharArray()) {
-            if(c == '{' || c == '(' || c == '[') {
-                stack.push(c);
-            } else {
-                if(stack.isEmpty() || !isMatchingBracket(stack.peek(), c)) {
-                    return false;
-                }
-                stack.pop();
-            }
-        }
-        return stack.isEmpty();
-    }
-    
-    public boolean isMatchingBracket(char openingBracket, char closingBracket) {
-        switch(openingBracket) {
-            case '(':
-                return closingBracket == ')';
-            case '{':
-                return closingBracket == '}';
-            case '[':
-                return closingBracket == ']';
-        }
-        return false;
-    }
-}
+class Solution:
+    def addBinary(self, a: str, b: str) -> str:
+        aLen = len(a)
+        bLen = len(b)
+        aInt = 0;
+        bInt = 0;
+        for i in range(aLen):
+            aInt += int(a[i]) * (2**(aLen - 1 - i))
+        for i in range(bLen):
+            bInt += int(b[i]) * (2**(bLen - 1 - i))
+        result = aInt + bInt
+        return format(result, "b")
