@@ -16,6 +16,7 @@
 class Solution {
     public TreeNode helper(int[] nums, int lo, int hi){
         if(lo > hi) return null;
+        
         int midpoint = (lo + hi) / 2;
         TreeNode root = new TreeNode(nums[midpoint]);
         root.left = helper(nums, lo, midpoint-1);
