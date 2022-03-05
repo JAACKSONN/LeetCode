@@ -5,6 +5,7 @@ class Solution:
         "L", "XC", "C", "CD", "D", "CM", "M"]
         i = 12
         ans = ""
+        
         while num:
             div = num // nums[i]
             num %= nums[i]
