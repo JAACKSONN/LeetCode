@@ -3,6 +3,7 @@ class Solution:
         n = len(nums)
         lo = 0
         hi = n - 1
+        
         while lo <= hi:
             mid = (hi + lo) // 2
             
