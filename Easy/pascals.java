@@ -3,10 +3,9 @@ package Easy;
 class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> result = new ArrayList<>();
-        if(numRows == 0){
-            return result;
-        }
         
+        if(numRows == 0) return result;
+
         List<Integer> first_row = new ArrayList<>();
         first_row.add(1);
         result.add(first_row);
