@@ -17,7 +17,9 @@ class Solution {
     public boolean isSymmetricHelper(TreeNode left, TreeNode right){
         if(left == null && right == null) return true;
         else if (left == null || right == null) return false;
-        return isSymmetricHelper(left.left, right.right) && isSymmetricHelper(left.right, right.left) && (left.val == right.val);
+        return isSymmetricHelper(left.left, right.right) 
+        && isSymmetricHelper(left.right, right.left) 
+        && (left.val == right.val);
     }
     public boolean isSymmetric(TreeNode root) 
     {
