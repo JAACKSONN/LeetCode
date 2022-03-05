@@ -12,6 +12,7 @@ class Solution:
         mp['M'] = 1000
         count += mp[s[n]]
         i = n
+        
         while i > 0:
             charAt = mp[s[i]]
             charLeft = mp[s[i-1]]
