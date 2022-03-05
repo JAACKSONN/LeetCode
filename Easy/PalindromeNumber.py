@@ -3,7 +3,6 @@ class Solution:
         x = str(x)
         if x[0] == '-':
             return False
-        
         lo = 0
         hi = len(x) - 1
         if(hi + 1 == 1):
