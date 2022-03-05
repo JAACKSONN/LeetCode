@@ -5,7 +5,6 @@ class Solution:
         res = []
         l = 0
         r = length -1 
-        
         while l < r:
             total = nums[l] + nums[r]
             
