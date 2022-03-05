@@ -1,3 +1,4 @@
+package Easy;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -20,6 +21,7 @@ class Solution {
             helper(root.left, result);
             helper(root.right, result);
         }
+        
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
         helper(root, result);
