@@ -4,6 +4,7 @@ class Solution:
         bLen = len(b)
         aInt = 0;
         bInt = 0;
+        
         for i in range(aLen):
             aInt += int(a[i]) * (2**(aLen - 1 - i))
         for i in range(bLen):
