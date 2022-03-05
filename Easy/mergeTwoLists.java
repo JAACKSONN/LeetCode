@@ -23,12 +23,10 @@ class Solution {
             }
             curr = curr.next;
         }
-        if(list1 != null){
-            curr.next = list1;
-        }
-        if(list2 != null){
-            curr.next = list2;
-        }
+        if(list1 != null) curr.next = list1;
+        
+        if(list2 != null) curr.next = list2;
+        
         return head.next;
     }
 }
