@@ -3,7 +3,6 @@ class Solution {
         int i = 0; //pointer that moves to the right by 1 each time
         int j = 0; //pointer that keeps track of the beginning of the window.
         int max = 0;
-        
         HashSet<Character> set = new HashSet<>();
         
         while(i < s.length()){
