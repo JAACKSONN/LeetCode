@@ -22,9 +22,7 @@ class Solution {
         
     }
     public int maxDepth(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
+        if(root == null) return 0;
         return helper(root.left, root.right);
     }
 }
