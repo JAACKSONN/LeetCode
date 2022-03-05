@@ -6,6 +6,7 @@ class Solution {
         List<Integer> first_row = new ArrayList<>();
         first_row.add(1);
         result.add(first_row);
+        
         for(int i = 1; i <= rowIndex; i++){
             List<Integer> prev_row = result.get(i - 1);
             List<Integer> row = new ArrayList<>();
