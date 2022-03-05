@@ -24,6 +24,7 @@ class Solution {
         helper(root.left, count + 1);
         helper(root.right, count + 1);
     }
+    
     public int minDepth(TreeNode root) {
         if(root == null) return 0;
         helper(root, 1);
