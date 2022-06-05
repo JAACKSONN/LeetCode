@@ -11,3 +11,4 @@ class Solution:
             bInt += int(b[i]) * (2**(bLen - 1 - i))
         result = aInt + bInt
         return format(result, "b")
+
