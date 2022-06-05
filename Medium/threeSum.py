@@ -20,7 +20,5 @@ class Solution:
                     lo += 1
                 else:
                     hi -= 1
-            
-        
         
         return res
