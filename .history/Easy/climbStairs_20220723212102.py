@@ -11,4 +11,4 @@ class Solution:
             n1 = temp
         
         return n2
-             
+            
