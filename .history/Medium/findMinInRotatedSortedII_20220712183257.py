@@ -10,8 +10,11 @@ class Solution:
                 break
                 
             mid = l + (r - l) // 2
-            res = min(res, nums[mid])
-            if nums[l] <= nums[mid]:
+            res = min(res, nums[mid], nums[l])
+            if nums[r] == nums[l]:
+                r-=1
+                l+=1
+            elif nums[l] <= nums[mid]:
                 l = mid + 1
             else:
                 r = mid - 1
