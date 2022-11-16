@@ -9,9 +9,5 @@ class Solution:
             tmp = max(nums[i] + rob1, rob2)
             rob1 = rob2
             rob2 = tmp
-            
-        
-        
-        
         
         return rob2

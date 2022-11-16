@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/design-browser-history/
 class BrowserHistory:
 
     def __init__(self, homepage: str):
