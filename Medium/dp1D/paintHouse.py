@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/paint-house/
 class Solution:
     def minCost(self, costs: List[List[int]]) -> int:
         prev0, prev1, prev2 = costs[0][0], costs[0][1], costs[0][2]
